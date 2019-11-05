@@ -1,6 +1,6 @@
 body {
     /* background-color: lightgray; */
-     background-image: url(polygon-1.jpg);
+     background-image: url(images/polygon-1.jpg);
      background-size: cover;  
   }
   
@@ -26,7 +26,7 @@ body {
   } 
 
   li{
-    /* background-color:   rgb(105, 98, 98); */
+    background-color: rgb(40, 44, 47);
     font-family: verdana;
     font-size: 15px;
     display: inline-block;
@@ -35,6 +35,21 @@ body {
     text-decoration: none;
     /* text-align: center; */
     padding: 15px;
+  }
+
+  li:hover{
+  background-color: rgba(255, 255, 255, 0.479);
+  color:  rgb(40, 44, 47);
+  }
+  li a:hover P{
+    color: black
+  }
+
+  li a{
+    display: block;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: white;
   }
 
   header{
@@ -73,8 +88,26 @@ footer{
   left: 0;
   background-color: rgb(40, 44, 47);
   color: white;
-  height: 90px;
+  height: 80px;
   width: 100%;
   text-align: center;
   }
   
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid black;
+  }
+  #hobby{
+    text-align: center;
+    color: white;
+  }
+  h3{
+    text-align: center;
+
+  }
+
+  /* #github{
+    margin-bottom: 20px;
+  } */
