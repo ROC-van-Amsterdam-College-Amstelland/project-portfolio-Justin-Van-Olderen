@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mijn Site</title>
+    <title>Contact</title>
     <link rel="icon" href="images/sibirian_HSm_icon.ico">
 </head>
 <body>
@@ -18,13 +18,14 @@
                 <li><a href="vaardigheden.html">Vaardigheden</a></li>
                 <li><a href="nieuws.html">Nieuws</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <iframe src="https://free.timeanddate.com/clock/i70ggvre/n16/tct/pct/ahr" frameborder="0" width="114" height="18" allowTransparency="true" id="klok"></iframe>
             </ul>
         </nav>
     </header>
 
     <h1>Contact</h1>
     <div id="Contact-text" class="text">
-      <h2>I ♡ to help</h2>
+      <h2>I Love to help</h2>
       <p>Name: Justin van Olderen, 
           Email: JustinOlder@gmail.com
           Number: 0623439055
@@ -33,9 +34,29 @@
 
     <footer>
         <div id="footer"></div> 
-        <a href= https://github.com/ROC-van-Amsterdam-College-Amstelland/git-oefenen-opdracht-1-Justin-Van-Olderen>
-        <img src="images/github-logo.png" alt="Github-logo" style: height="50" width="50"> 
+        <a href= https://github.com/ROC-van-Amsterdam-College-Amstelland/project-portfolio-Justin-Van-Olderen> <br>
+        <img src="images/github-logo.png" alt="Github-logo" style: height="50" width="50"></a>
 </footer>   
+  <div id= "Email-form" class="text"> 
+    <form>
+      <input type="text" id="name">name</input><br>
+      <input type="text" id="email">email</input><br>
+      <input type="text" id="subject">onderwerp</input><br>
+      <textarea type="text" id="body">body</textarea><br>
+    <input type="submit" onclick="sendMail()"></iput>
+    </form>
+    <script>
+      function sendMail(){
+         var name = document.getElementById('name').value;
+         var email = document.getElementById('email').value;
+         var subject = document.getElementById('subject').value;
+         var body = document.getElementById('body').value;
+          var link = "mailto:justinolde@gmai.com?subject="+subject+"&body="+email+" | "+name+" | "+body;
+      window.open(link);
+    }
+    </script>
+  </div>
+
 
 </body>
 </html>
